@@ -3,7 +3,7 @@ package com.example.Practice.Springboot.APIs6;
 public class UpdateEmailDemo {
     public static void main(String[] args) {
         updateEmail();
-       updateUserProfile();
+        updateUserProfile();
     }
 
     public static void updateEmail() {
@@ -33,6 +33,7 @@ public class UpdateEmailDemo {
 
         System.out.println("Update Status: " + isUpdated);
     }
+
     public static void updateUserProfile() {
         System.out.println("=== TASK 31 ===");
 
@@ -42,7 +43,7 @@ public class UpdateEmailDemo {
         System.out.println("User ID: " + user.getUserId());
         System.out.println("Phone Number: " + user.getPhoneNumber());
         System.out.println("Address: " + user.getAddress());
-    // update operation by changing phone + Address  using setter methods:
+        // update operation by changing phone + Address  using setter methods:
         user.setPhoneNumber(67894245);
         user.setAddress("ALSeeb, Muscat");
         System.out.println("\nAfter Update");
@@ -50,8 +51,5 @@ public class UpdateEmailDemo {
         System.out.println("User ID: " + user.getUserId());
         System.out.println("Phone Number: " + user.getPhoneNumber());
         System.out.println("Address: " + user.getAddress());
-    }}
-}
-        }
-
+    }
 }
