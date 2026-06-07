@@ -20,11 +20,17 @@ public class orderController {
         if (!orders.containsKey(orderId)) {
             return "Order not found";
         }
+        // Retrieve the existing order from the HashMap using its ID
         Order order = orders.get(orderId);
+        // Update the shipping address with the new value received from the request
         order.setShippingAddress(address);
+        // Update the order status with the new value received from the request
         order.setOrderStatus(status);
-
+        return "Order Updated Successfully\n" +
+                "Order ID: " + order.getOrderId() + "\n" +
+                "Updated Shipping Address: " + order.getShippingAddress() + "\n" +
+                "Updated Order Status: " + order.getOrderStatus();
     }
-}
 
 }
+
