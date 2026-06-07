@@ -34,6 +34,7 @@ public class UpdateEmailDemo {
         System.out.println("Update Status: " + isUpdated);
     }
     public static void updateUserProfile() {
+        System.out.println("=== TASK 31 ===");
 
         UserProfile user = new UserProfile(1001, 999997865, "Muscat, Oman");
         //Display the original user profile information using getter methods
