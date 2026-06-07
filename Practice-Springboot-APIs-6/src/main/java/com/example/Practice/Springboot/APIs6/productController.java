@@ -21,5 +21,6 @@ public class productController {
         }
         Product product = products.get(id);
         int oldStock = product.getStockQuantity();
+        product.setStockQuantity(quantity);
 
     }
