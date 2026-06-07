@@ -32,4 +32,9 @@ public class UpdateEmailDemo {
 
         System.out.println("Update Status: " + isUpdated);
     }
+    public static void updateUserProfile() {
+
+        UserProfile user = new UserProfile(1001, 999997865, "Muscat, Oman");
+    }
+
 }
