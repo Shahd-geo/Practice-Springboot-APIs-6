@@ -29,3 +29,4 @@ public class productController {
                 "Updated Stock: " + quantity;
     }
     }
+    }
