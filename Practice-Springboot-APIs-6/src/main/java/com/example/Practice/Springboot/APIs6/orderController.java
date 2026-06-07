@@ -15,6 +15,9 @@ public class orderController {
     }
     @PutMapping("/updateOorder/{orderId}")
     public String updateOrder(@PathVariable int orderId, @RequestParam String address,@RequestParam String status) {
+        if (!orders.containsKey(orderId)) {
+            return "Order not found";
+        }
 
     }
 
