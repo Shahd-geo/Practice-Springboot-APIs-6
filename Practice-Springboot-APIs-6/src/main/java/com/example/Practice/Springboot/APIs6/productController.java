@@ -23,4 +23,9 @@ public class productController {
         int oldStock = product.getStockQuantity();
         product.setStockQuantity(quantity);
 
+        return "Product Updated Successfully\n" +
+                "Product Name: " + product.getName() + "\n" +
+                "Previous Stock: " + oldStock + "\n" +
+                "Updated Stock: " + quantity;
+    }
     }
