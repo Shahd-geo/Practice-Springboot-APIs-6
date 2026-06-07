@@ -35,6 +35,11 @@ public class UpdateEmailDemo {
     public static void updateUserProfile() {
 
         UserProfile user = new UserProfile(1001, 999997865, "Muscat, Oman");
+        System.out.println("Before Update");
+        System.out.println("User ID: " + user.getUserId());
+        System.out.println("Phone Number: " + user.getPhoneNumber());
+        System.out.println("Address: " + user.getAddress());
+
     }
 
 }
