@@ -35,11 +35,19 @@ public class UpdateEmailDemo {
     public static void updateUserProfile() {
 
         UserProfile user = new UserProfile(1001, 999997865, "Muscat, Oman");
+        //Display the original user profile information using getter methods
         System.out.println("Before Update");
         System.out.println("User ID: " + user.getUserId());
         System.out.println("Phone Number: " + user.getPhoneNumber());
         System.out.println("Address: " + user.getAddress());
-
+    // update operation by changing at least two fields using setter methods:
+        user.setPhoneNumber(67894245);
+        user.setAddress("ALSeeb, Muscat");
+        System.out.println("\nAfter Update");
+        //. Display the updated user profile information after modifications
+        System.out.println("User ID: " + user.getUserId());
+        System.out.println("Phone Number: " + user.getPhoneNumber());
+        System.out.println("Address: " + user.getAddress());
     }
 
 }
