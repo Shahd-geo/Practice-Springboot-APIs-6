@@ -19,6 +19,6 @@ public class productController {
         if (!products.containsKey(id)) {
             return "Product not found";
         }
-    }
+        Product product = products.get(id);
 
     }
