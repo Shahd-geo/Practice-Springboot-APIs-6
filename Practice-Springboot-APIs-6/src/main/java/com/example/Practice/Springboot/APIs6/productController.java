@@ -1,5 +1,6 @@
 package com.example.Practice.Springboot.APIs6;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,10 @@ public class productController {
         products.put(1, new Product(1, "Laptop", 10));
     }
     @PutMapping("/updateStock/{id}")
-    public String updateStock(@RequestParam int id, @RequestParam int quantity) {
+    public String updateStock(@PathVariable int id, @RequestParam int quantity) {
+        if (!products.containsKey(id)) {
+            return "Product not found";
+        }
+    }
 
     }
