@@ -1,6 +1,8 @@
 package com.example.Practice.Springboot.APIs6;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -12,5 +14,8 @@ public class orderController {
         orders.put(1, new Order(1, "Muscat", " Delivered"));
     }
     @PutMapping("/updateOorder/{orderId}")
+    public String updateOrder(@PathVariable int orderId, @RequestParam String address,@RequestParam String status) {
+
+    }
 
 }
