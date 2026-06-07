@@ -21,6 +21,7 @@ public class orderController {
             return "Order not found";
         }
         Order order = orders.get(orderId);
+        order.setShippingAddress(address);
 
     }
 }
