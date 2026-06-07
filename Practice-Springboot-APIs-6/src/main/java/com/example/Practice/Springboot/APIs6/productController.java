@@ -20,5 +20,6 @@ public class productController {
             return "Product not found";
         }
         Product product = products.get(id);
+        int oldStock = product.getStockQuantity();
 
     }
