@@ -50,6 +50,8 @@ public class UpdateEmailDemo {
         System.out.println("User ID: " + user.getUserId());
         System.out.println("Phone Number: " + user.getPhoneNumber());
         System.out.println("Address: " + user.getAddress());
-    }
+    }}
+}
+        }
 
 }
