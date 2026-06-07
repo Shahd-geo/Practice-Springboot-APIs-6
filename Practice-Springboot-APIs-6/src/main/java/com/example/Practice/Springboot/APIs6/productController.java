@@ -6,5 +6,9 @@ import java.util.HashMap;
 
 @RestController
 public class productController {
-    HashMap<Integer, Product> products = new HashMap<>();
+   private HashMap<Integer, Product> products = new HashMap<>();
+   //Preload it with at least one sample product
+    public productController() {
+        products.put(1, new Product(1, "Laptop", 10));
+    }
 }
