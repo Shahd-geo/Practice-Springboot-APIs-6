@@ -1,5 +1,6 @@
-package com.example.Practice.Springboot.APIs6;
+package com.example.Practice.Springboot.APIs6.Controllers;
 
+import com.example.Practice.Springboot.APIs6.Entities.Order;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,7 +16,7 @@ public class orderController {
         orders.put(101, new Order(101, "Muscat", "Pending"));
     }
 
-    @PutMapping("/updateOorder/{orderId}")
+    @PutMapping("/updateOrder/{orderId}")
     public String updateOrder(@PathVariable int orderId, @RequestParam String address, @RequestParam String status) {
         if (!orders.containsKey(orderId)) {
             return "Order not found";

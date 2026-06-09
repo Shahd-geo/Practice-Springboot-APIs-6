@@ -1,4 +1,6 @@
-package com.example.Practice.Springboot.APIs6;
+package com.example.Practice.Springboot.APIs6.Services;
+
+import com.example.Practice.Springboot.APIs6.Entities.UserProfile;
 
 public class UpdateEmailDemo {
     public static void main(String[] args) {

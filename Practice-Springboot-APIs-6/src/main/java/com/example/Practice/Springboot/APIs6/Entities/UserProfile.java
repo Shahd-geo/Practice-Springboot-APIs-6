@@ -1,8 +1,4 @@
-package com.example.Practice.Springboot.APIs6;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+package com.example.Practice.Springboot.APIs6.Entities;
 
 public class UserProfile {
     private int userId;

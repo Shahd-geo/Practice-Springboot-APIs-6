@@ -1,4 +1,4 @@
-package com.example.Practice.Springboot.APIs6;
+package com.example.Practice.Springboot.APIs6.Entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
